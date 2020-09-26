@@ -1,0 +1,40 @@
+.AnswerItem{
+    list-style: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.AnswerItem:hover{
+    background-color: #fff;
+    opacity: .7;
+    color: rgb(17, 105, 76);
+}
+
+
+.success{
+    list-style: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+
+    background: rgba(54, 236, 54, 0.5);
+}
+
+.error{
+    list-style: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    color: #fff;
+    cursor: pointer;
+
+    background: rgba(253, 0, 34, 0.5);
+}
