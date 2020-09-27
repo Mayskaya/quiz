@@ -6,6 +6,7 @@ import AnswerList from './AnswerList/AnswerList'
 //     return (
 const ActiveQuiz = props => (
     <div className='ActiveQuiz'>
+        <h1>Ответьте на все вопросы</h1>
         <p className='Question'>
             <span>
                 <strong>{props.answerNumber}.</strong> &nbsp;
