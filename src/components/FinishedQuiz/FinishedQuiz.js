@@ -1,22 +1,24 @@
 import React from 'react'
+import Button from '../UI/Button/Button'
 import './FinishedQuiz.css'
 
 const FinishedQuiz = props => {
-const successCount = Object.keys(props.results).reduce((total, key)=>{
-    if(props.results[key]==='success'){
-        total++
-    }
-    return total
-},0)
+    const successCount = Object.keys(props.results).reduce((total, key) => {
+        if (props.results[key] === 'success') {
+            total++
+        }
+        return total
+    }, 0)
 
     return (
         <div className='FinishedQuiz'>
+            <h1 className='Results'>Результаты</h1>
             <ul>
                 {props.quiz.map((quizItem, index) => {
                     let cls = ''
                     let total = 0
                     if (props.results[quizItem.id] === 'error') { cls = 'fa fa-times' }
-                    else {cls = 'fa fa-check'}
+                    else { cls = 'fa fa-check' }
 
                     return (
                         <li key={index}>
@@ -31,10 +33,14 @@ const successCount = Object.keys(props.results).reduce((total, key)=>{
             <p>Правильно {successCount} из {props.quiz.length}</p>
 
             <div>
-                <button 
-                onClick={()=>props.onRetryClick()}
-                className='Retry'
-                >Повторить</button>
+                <Button
+                    onClick={() => props.onRetryClick()}
+                    type='retry'>
+                    Повторить</Button>
+                <Button
+                    // onClick={() => props.onRetryClick()}
+                    type='question_list'>
+                    Перейти к списку тестов</Button>
             </div>
         </div>
     )

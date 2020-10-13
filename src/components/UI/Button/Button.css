@@ -1,0 +1,18 @@
+.Button{
+    padding: 12px 16px;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+
+    margin: 10px;
+
+}
+
+.retry{
+    background: rgba(154, 241, 165, 0.5);
+}
+
+.question_list{
+    background: rgba(154, 195, 241, 0.5);
+
+}
