@@ -8,7 +8,7 @@
 
     padding: 20px 10px;
     box-sizing: border-box;
-    background: rgb(232, 252, 239);
+    background: rgb(232, 250, 252);
     z-index: 90;
 
     transform: translateX(0px);
@@ -30,10 +30,9 @@
 }
 
 .Drawer ul li a{
-    color: rgb(31, 153, 86);
+    color: rgb(31, 104, 153);
     font-size: 30px;
     text-decoration: none;
-    /* background-color: #fff; */
     position: relative;
     padding: 0 20px 10px 20px;
     transition: opacity .3s;
