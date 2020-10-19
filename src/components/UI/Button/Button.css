@@ -14,5 +14,12 @@
 
 .question_list{
     background: rgba(154, 195, 241, 0.5);
+}
 
+.success{
+    background: rgba(126, 236, 141, 0.7);
+}
+
+.primary{
+    background: rgba(113, 170, 235, 0.7);
 }

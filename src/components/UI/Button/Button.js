@@ -2,7 +2,6 @@ import React from 'react'
 import './Button.css'
 
 const Button = props => {
-    // let cls = (props.type)
     
     return (
         <button 
