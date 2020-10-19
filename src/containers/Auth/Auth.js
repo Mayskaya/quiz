@@ -125,14 +125,6 @@ export default class Auth extends Component {
                     >
 
                         {this.renderInputs()}
-                        {/* <Input
-                            label="Email"
-                        />
-                        <Input
-                            label="Пароль"
-                            type='password'
-                            errorMessage='test'
-                        /> */}
 
                         <Button
                             type='success'

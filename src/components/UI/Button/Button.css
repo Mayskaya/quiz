@@ -23,3 +23,7 @@
 .primary{
     background: rgba(113, 170, 235, 0.7);
 }
+
+.disabled{
+    background: #bebebe;
+}

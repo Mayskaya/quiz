@@ -8,13 +8,13 @@
     padding: 0;
     display: block;
     font-weight: bold;
-    color: rgb(235, 157, 13);
+    color: rgb(43, 177, 126);
 }
 
 .Input input{
     display: block;
     box-sizing: border-box;
-    border: 2px solid #ddc8c8 .7;
+    border: 2px solid #daddc8;
     border-radius: 5px;
     padding: 7px;
     margin: 0 0 5px;
