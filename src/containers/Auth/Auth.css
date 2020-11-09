@@ -31,3 +31,6 @@
     margin: 0 10px;
     border: 2px solid rgb(250, 228, 228);
 }
+.AuthForm label {
+    padding: 0 0 0 10px;
+}

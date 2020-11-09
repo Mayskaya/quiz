@@ -1,13 +1,7 @@
 import React, { Component } from 'react'
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './Drawer.css'
 import Backdrop from '../../UI/Backdrop/Backdrop'
-
-const links = [
-    {to:'/', label: 'Список тестов', exact: true},
-    {to:'/auth', label: 'Авторизация', exact: false},
-    {to:'/quiz-creator', label: 'Создать тест', exact: false}
-]
 
 class Drawer extends Component {
 
@@ -15,15 +9,15 @@ class Drawer extends Component {
         this.props.onClose()
     }
 
-    renderLinks() {
+    renderLinks(links) {
         return links.map((link, index) => {
             return (
                 <li key={index}>
-                    <NavLink 
-                    to={link.to} 
-                    exact={link.exact}
-                    activeClassName={'active'}
-                    onClick={this.clickHandler}
+                    <NavLink
+                        to={link.to}
+                        exact={link.exact}
+                        activeClassName={'active'}
+                        onClick={this.clickHandler}
                     >
                         {link.label}
                     </NavLink>
@@ -33,11 +27,23 @@ class Drawer extends Component {
     }
     render() {
         let cls = !(this.props.isOpen) ? 'Drawer close' : 'Drawer'
+
+        const links = [
+            { to: '/', label: 'Список тестов', exact: true }
+                    
+        ]
+
+        if(this.props.isAuthenticated){
+            links.push({ to: '/quiz-creator', label: 'Создать тест', exact: false })
+            links.push({ to: '/logout', label: 'Выйти', exact: false })
+        }else{
+            links.push({ to: '/auth', label: 'Авторизация', exact: false })
+        }
         return (
             <React.Fragment>
                 <nav className={cls}>
                     <ul>
-                        {this.renderLinks()}
+                        {this.renderLinks(links)}
                     </ul>
                 </nav>
                 {this.props.isOpen

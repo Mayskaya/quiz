@@ -7,7 +7,7 @@
     background: linear-gradient(30deg, #4abef3 0%, #0c9adb 30%, #035c85 100%);
 }
 
-.QuizCreator > div{
+.DivQuiz{
     width: 100%;
     max-width: 600px;
     padding: 0 20px;
