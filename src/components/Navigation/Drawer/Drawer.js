@@ -52,7 +52,6 @@ class Drawer extends Component {
                     />
                     : null}
             </React.Fragment>
-
         )
     }
 }

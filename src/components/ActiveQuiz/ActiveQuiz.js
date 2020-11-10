@@ -2,8 +2,6 @@ import React from 'react'
 import './ActiveQuiz.css'
 import AnswerList from './AnswerList/AnswerList'
 
-// function ActiveQuiz(props) {
-//     return (
 const ActiveQuiz = props => (
     <div className='ActiveQuiz'>
         <h1>Ответьте на все вопросы</h1>
@@ -20,8 +18,6 @@ const ActiveQuiz = props => (
             onAnswerClick={props.onAnswerClick}
         />
     </div>
-    // );
-    // }
 )
 
 export default ActiveQuiz;

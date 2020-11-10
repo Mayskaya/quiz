@@ -129,17 +129,26 @@ export function quizAnswerClick(answerId) {
         } else {
             results[question.id] = 'error'
             dispatch(quizSetState({ [answerId]: 'error' }, results))
+            const timeout = window.setTimeout(() => {
+                if (isQuizFinished(state)) {
+                    dispatch(finishQuiz())
+                } else {
+                    dispatch(quizNextQuestion(state.activeQuestion + 1))
+                }
+
+                window.clearTimeout(timeout)
+            }, 1000)
         }
     }
 }
 
-function isQuizFinished(state){
+function isQuizFinished(state) {
     return state.activeQuestion + 1 === state.quiz.length
-    
+
 }
 
-export function retryQuiz(){
-    return{
+export function retryQuiz() {
+    return {
         type: QUIZ_RETRY,
     }
 }

@@ -1,11 +1,9 @@
 .Quiz{
     width: 100%;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     flex-grow: 1;
     padding-top: 100px;
-    /* flex-direction: column; */
 
     background: linear-gradient(90deg, #2e8147 0%, #84e9a6 100% );
 }

@@ -12,7 +12,6 @@ const AnswerItem = props => {
         else {
             cls = 'error'
         }
-
     }
 
     return (
@@ -21,7 +20,6 @@ const AnswerItem = props => {
             onClick={() => props.onAnswerClick(props.answer.id)}
         >
             {props.answer.text}
-
         </li>
     );
 }

@@ -17,7 +17,6 @@ const FinishedQuiz = props => {
             <ul>
                 {props.quiz.map((quizItem, index) => {
                     let cls = ''
-                    // let total = 0
                     if (props.results[quizItem.id] === 'error') { cls = 'fa fa-times' }
                     else { cls = 'fa fa-check' }
 

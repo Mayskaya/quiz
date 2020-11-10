@@ -13,10 +13,6 @@
     margin: 0;
 }
 
-.FinishedQuiz ul li{
-
-}
-
 .fa-times{
     color: red
 }
@@ -24,8 +20,6 @@
 .fa-check{
     color: green
 }
-
-
 
 .Results{
     color: #fff;

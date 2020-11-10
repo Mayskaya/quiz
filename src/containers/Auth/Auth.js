@@ -130,7 +130,6 @@ class Auth extends Component {
                         className='AuthForm'
                         onSubmit={this.submitHandler}
                     >
-
                         {this.renderInputs()}
 
                         <Button
